@@ -1,0 +1,139 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:ital,wght@0,800;1,700&family=Karla:wght@400;700&family=Lexend+Deca&family=Montserrat:ital,wght@1,700&family=Open+Sans&family=Outfit:wght@300;400;700&family=Overpass:wght@400;700&family=Poppins:wght@600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+ 
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-yellow:hsl(71, 73%, 54%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body{
+    background-color:hsl(204, 43%, 93%);
+    font-size:  16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px gray;
+    max-width: 1000px;
+   
+
+}
+.box
+{
+    display: grid;
+    grid-template-rows: .6fr 1fr;
+   
+    
+
+}
+.box1{
+    padding: 50px;
+    background-color:white;
+   
+}
+
+.box2{
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    
+}
+.box21{
+    background-color: var(--Cyan);
+    padding: 40px;
+}
+.box22{
+    padding: 40px;
+    background-color: var(--Grayish-Blue);
+  
+}
+.join{
+    color:var(--Cyan);
+    padding-bottom: 20px;
+}
+
+
+.days{
+    color: var(--Bright-yellow);
+    padding-bottom: 20px;
+}
+
+.box1 p{
+    color: var(--Grayish-Blue);
+}
+.box2 h2{
+    color: white;
+    padding-bottom: 20px;
+
+}
+
+
+.p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box2 p{
+    color: var(--Light-Gray);
+    padding-bottom: 20px;
+}
+a{
+    display: block;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    background-color: var(--Bright-yellow);
+    text-decoration: none;
+    font-size: 25px;
+}
+li{
+    list-style: none;
+    color: var(--Light-Gray);
+    line-height: 2rem;
+    
+}
+
+.content{
+    padding: 30px;
+}
+.price{
+ 
+ 
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+
+}
+
+@media only screen and (max-width:500px){
+    .box2{
+        grid-template-columns: 1fr;
+    }
+
+    .box{
+        grid-template-rows:1fr 2fr;
+    }
+}
