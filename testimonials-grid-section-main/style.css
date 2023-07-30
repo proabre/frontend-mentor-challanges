@@ -142,7 +142,7 @@
 
     color: var(--Very-dark-blackish-blue);
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:500px){
     .container{
         display: flex;
         flex-direction: column;
