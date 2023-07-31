@@ -73,6 +73,8 @@ h2.first{
     border-radius: 15px;
     border-top: 5px solid hsl(180, 62%, 55%);
     box-shadow: 2px 2px gray;
+    box-shadow: 4px 4px 5px var(--Grayish-Blue);
+
     
 }
 
@@ -91,10 +93,11 @@ h2.first{
     width: 300px;
     height: 220px;
     background-color: white;
-   
     margin-bottom: 20px;
     border-radius: 15px;
     border-top: 5px solid hsl(0, 78%, 62%);
+    box-shadow: 4px 4px 5px var(--Grayish-Blue);
+
 }
 
 .carma{
@@ -103,7 +106,9 @@ h2.first{
     height: 220px;
     background-color:white;
     border-radius: 15px;
-    border-top: 5px solid hsl(34, 97%, 64%)
+    border-top: 5px solid hsl(34, 97%, 64%);
+    box-shadow: 4px 4px 5px var(--Grayish-Blue);
+
 
 }
 
@@ -113,6 +118,8 @@ h2.first{
     background-color:white;
     border-radius: 15px;
     border-top: 5px solid hsl(212, 86%, 64%);
+    box-shadow: 4px 4px 5px var(--Grayish-Blue);
+
 }
 div img{
     max-width: 100%;
@@ -121,7 +128,10 @@ div img{
     padding-bottom: 20px;
 
 }
-
+.first-head{
+    font-size: 24px;
+   
+}
 div h3{
     padding: 20px;
 }
