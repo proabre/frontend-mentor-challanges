@@ -1,0 +1,160 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Fraunces:ital,wght@0,800;1,700&family=Karla:wght@400;700&family=Lexend+Deca&family=Montserrat:ital,wght@1,700&family=Open+Sans&family=Outfit:wght@300;400;700&family=Overpass:wght@400;700&family=Poppins:wght@200;300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+
+        --Red: hsl(0, 78%, 62%);
+        --Cyan: hsl(180, 62%, 55%);
+        --Orange: hsl(34, 97%, 64%);
+        --Blue: hsl(212, 86%, 64%);
+        --Very-Dark-Blue: hsl(234, 12%, 34%);
+        --Grayish-Blue: hsl(229, 6%, 66%);
+        --Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+*{
+    margin: 0% auto;
+    padding: 0% auto;
+}
+
+body{
+
+    margin: 0% auto;
+    padding: 0% auto;
+    font-family: 15px;
+    background-color: var(--Very-Light-Gray) ;     
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.text{
+ 
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.text p{
+    padding: 20px;
+    max-width: 600px;
+    margin: 0% auto;
+}
+
+h2.first{
+
+    color: gray;
+}
+.box{
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+}
+
+.container{
+
+    margin: 5% auto;
+    padding: 40px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--Very-Light-Gray);
+ 
+ }
+
+.supervisor{
+    
+    width: 300px;
+    height: 220px;
+    background-color: white;
+    border-radius: 15px;
+    border-top: 5px solid hsl(180, 62%, 55%);
+    box-shadow: 2px 2px gray;
+    
+}
+
+.team-carma{
+    width: 300px;
+    height: 440px;
+    background-color: hsl(0, 0%, 98%)e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.team{
+    width: 300px;
+    height: 220px;
+    background-color: white;
+   
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.carma{
+
+    width: 300px;
+    height: 220px;
+    background-color:white;
+    border-radius: 15px;
+    border-top: 5px solid hsl(34, 97%, 64%)
+
+}
+
+.calculator{
+    width: 300px;
+    height: 220px;
+    background-color:white;
+    border-radius: 15px;
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+div img{
+    max-width: 100%;
+    float: right;
+    margin:20px;
+    padding-bottom: 20px;
+
+}
+
+div h3{
+    padding: 20px;
+}
+
+div p{
+    padding-left: 20px;
+}
+div h2,p{
+    color: var(--Grayish-Blue);
+}
+.powered-by{
+    color:var(--Very-Dark-Blue);
+}
+div h3{
+    color: var(--Very-Dark-Blue);
+}
+
+@media only screen and (max-width:700px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+                
+    }
+    .box{
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .team-carma{
+        margin-bottom: 40px;
+    }
+}
