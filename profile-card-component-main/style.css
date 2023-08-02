@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-size: 18px
+   
+
+}
+.container{
+    padding:0%;
+    margin: 50px auto;
+    align-items: center;
+    background-color: white;
+    max-width: 600px;
+    border-radius: 17px;
+    overflow: hidden;
+
+    
+}
+.baground-pattern img{
+
+    width:100%;
+
+}
+
+.avatar img{
+    
+    border-radius: 50px;
+    margin-top: -50px;
+    display: flex;
+        margin-left: auto;
+    margin-right: auto;
+ 
+}
+.discription{
+    
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+
+}
+div p{
+    color:   hsl(227, 10%, 46%);
+}
+div h2{
+    padding-bottom: 10px;
+    color: hsl(229, 23%, 23%);
+}
+.card{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+} 
+.follower{
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+
+}
+.like{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.photo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+hr{
+
+    background-color: gray;
+   
+}
+.sp{
+    color: gray;
+    font-size: 18px;
+}
+
+@media only screen and (max-width:500px){
+    .container{
+        margin: 20px;
+    }
+}
