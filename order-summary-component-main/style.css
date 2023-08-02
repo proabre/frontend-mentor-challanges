@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,800;1,700&family=Montserrat:ital,wght@1,700&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-paleblue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+   font-family: 'Outfit', sans-serif;
+   font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 2fr repeat(4,100px);
+    max-width: 500px;
+    margin: 10% auto;
+    background-color: white;
+    align-items: first baseline;
+    border-radius: 20px;
+    overflow: hidden;
+    align-content:first baseline;
+    justify-content: space-between;
+    row-gap: 25px;
+   
+    
+   
+}
+
+.img{
+    grid-row: 1/2;
+    grid-column: 1/5;
+    overflow: hidden;
+
+}
+img{
+    width: 100%;
+}
+.text-content{
+   
+    grid-row: 2/4;
+    grid-column: 1/5;
+    text-align: center;
+    padding: 0px 20px;
+    margin-top: 30px;
+      
+}
+
+.box{
+    grid-row: 3/4;
+    grid-column: 1/5;
+    background-color: var(--Very-paleblue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin: 10px 50px;
+    padding: 30px;
+    border-radius: 10px;
+ 
+
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons{
+    grid-row:4/5;
+    grid-column: 1/5;
+   
+    display: flex;
+    flex-direction: column;
+   gap: 10px;
+    margin: 10px 50px;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+.proced{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: 0px;
+    box-shadow: 0px 10px 10px var(--Desaturated-blue);
+
+}
+.cancel{
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--Desaturated-blue);
+    font-weight: bold;
+    border: 0px;
+    background-color: white;
+ 
+}
+
+.box .discription h2{
+    color: var(--Dark-blue);
+}
+.text-content h1{
+    color: var(--Dark-blue);
+}
+
+div p{
+    color: var(--Desaturated-blue);
+}
+
+a:hover{
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.proced:hover{
+    opacity: .5;
+}
+.cancel:hover{
+    color: black;
+    cursor: pointer;
+}
