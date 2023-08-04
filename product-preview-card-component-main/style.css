@@ -1,0 +1,152 @@
+
+
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;*/
+:root{
+
+    
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font-weight-regular:500;
+    --font-weight-bold:700;
+    --font-famiy-title:'Fraunces', serif; 
+    --font-family-regular:'Montserrat', sans-serif;
+    --btn-hover-color:hsl(158, 65%, 19%);
+    
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+body {
+
+  
+    margin: 0 auto;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-family-regular);
+    min-height: 100vh;
+    place-content: center;
+    overflow-wrap: wrap;
+    background-color: var(--Cream);
+    font-size:14px ;
+   
+
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+ 
+  .product{
+
+        margin: 2% auto;
+        border-radius: 1rem;
+        background-color: var(--White);
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+      
+        
+  }
+
+
+picture{
+    flex-grow: 1;
+}
+  .product-content{
+
+    display: grid;
+    padding: 2.5rem;
+    gap: .8rem;
+    color: var(--Dark-grayish-blue);
+   
+  }
+  .product-type{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+  }
+
+  .product-title{
+    font-family: var(--font-famiy-title);
+    font-weight: var(--font-weight-bold);
+    font-size: 3rem;
+    line-height: 0.9;
+    color: var(--Very-dark-blue);
+  }
+
+  .flexed-prices{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+  }
+  .current-price{
+    font-family: var(--font-famiy-title);
+    color: var(--Dark-cyan);
+    font-size: 3rem;
+    font-family: var(--font-famiy-title);
+  }
+.origional-price{
+    text-decoration: line-through;
+}
+.btn{
+
+    padding: 20px 10px;
+    border-radius: .5rem;
+    border: 0px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+
+
+
+}
+
+
+.btn:is(:hover,:focus){
+
+    background-color:var(--btn-hover-color) ;
+    transition: .5s;
+}
+
+p{
+    font-size: 1.2rem;
+    
+}
+img{
+  width: 100%;
+}
+@media (max-width:700px){
+  .product{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem;
+
+  }
+}
