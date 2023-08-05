@@ -191,9 +191,13 @@ h1{
     border: 0px;
     background-color:var(--Persian-blue);
     color: white;
+    
    
 }
-
+.btn:is(:hover,:active){
+    background-color:var(--Cobalt-blue);
+    cursor: pointer;
+}
 .react{
     color: var(--Light-red);
 }
