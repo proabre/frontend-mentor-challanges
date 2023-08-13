@@ -45,6 +45,7 @@ div img{
 }
 
 .left{
+    margin-top:3rem;
     display: grid;
 }
 
