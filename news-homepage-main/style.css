@@ -173,7 +173,7 @@ hr{
  
 }
 
-#fle{
+.fle{
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -235,7 +235,7 @@ hr{
 div p{
     opacity: .7;
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:500px){
     .container{
    
         padding: .7rem;
