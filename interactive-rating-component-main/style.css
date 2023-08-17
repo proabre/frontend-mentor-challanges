@@ -147,3 +147,13 @@ p{
     font-size: 20px;
     
 }
+@media only screen and (max-width:500px){
+    .home{
+        margin: 1rem;
+        
+    }
+    .thank-you{
+        margin: 1rem;
+    }
+}
+
